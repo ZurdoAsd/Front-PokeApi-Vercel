@@ -1,0 +1,34 @@
+.containerPaginado {
+    margin: 0 auto
+}
+ul{padding: 0;margin-left: auto;margin-right: auto}
+.button{ 
+    background: var(--primary-color);
+    border-radius: 20px;
+    font-size: 1.5em;
+    cursor:pointer;
+    margin-left: 2em;
+    color: rgba(255, 255, 255, 0.498);
+    border: 2px solid rgba(255, 255, 255, 0.498);}
+    
+.button:hover{
+    background-color:rgba(255, 255, 255, 0.397) ;
+    transform: scale(150%); }
+
+.button:focus {
+  background-color:rgba(255, 255, 255, 0.397) ;
+  transform: scale(150%); }
+
+  @media (max-width:600px){
+    ul{
+        display:flex;
+        padding: 0;
+        justify-content: space-between;   
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+   .button{ 
+         
+            margin-left: 0;
+          }
+      }

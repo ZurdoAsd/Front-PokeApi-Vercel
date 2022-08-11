@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+.container {
+  background: url("https://p4.wallpaperbetter.com/wallpaper/60/208/964/dark-clouds-halloween-mimikyu-pokemon-pikachu-art-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+  min-width: 100vw;
+  width: 100%;
+}
+
+ .cards {
+  display: inline-block;
+} 
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.361);
+  position: relative;
+  flex-wrap: wrap;
+}
+.items{
+ margin-left: auto;
+ margin-right: auto;
+ align-items: center;
+}
+.logo{
+  flex:auto;
+  min-width:200px;
+  max-height: 100px;
+  margin:0
+}
+
+.recargar {
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  border: solid 3px #2c4592;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.recargar:hover {
+  background-color: #2c4592;
+  border: solid 2px transparent;
+  border-style: groove;
+  color: #e5e5e5;
+}
+
+.crear{
+  text-decoration: none;
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  border: solid 3px #2c4592;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+ }
+ .crear :link { 
+  color: black !important;
+  text-decoration: none;}
+  .crear :visited { 
+    color: black !important;
+    text-decoration: none;}
+    .crear :active{ 
+      color: black !important;
+      text-decoration: none;}
+
+.crear:hover {
+  text-decoration: none;
+  background-color: #2c4592;
+  border: solid 2px transparent;
+  border-style: groove;
+  color: #e5e5e5;
+}
+.currentpoke {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: fit-content;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  border: solid 3px #2c4592;
+  box-shadow: 0 2px 3px 3px rgba(20, 20, 20, 0.4);
+  padding: 0.5em 0.5em;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing:3px
+}
+
+
+.select {
+  margin-top: 2vh;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #e5e5e5;
+  border: solid 3px #2c4592;
+  border-radius: 2px;
+  font-size: 15px;
+  height: fit-content;
+  padding: 5px;
+  width: 250px;
+  margin-right: 10px;}
+
+.letrero {
+  align-items: center;
+padding-left: 15px;
+padding-right: 15px;
+  border: solid 3px transparent;
+  border-radius: 10px;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  background-color: #e5e5e5;
+  color: black;
+  box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
+  opacity: 0.9;
+}
+
+.lupita{
+  display:flex;
+  position: relative;
+  padding:0;
+  margin: 1rem auto;
+width: 50px; 
+border: 0;
+border-radius: 50%;
+height: 50px;
+background:#2c4592;
+cursor:pointer;
+}
+.lupita img{
+  width: 50%;
+  height:60%;
+  margin:auto;
+}
+
+@media (max-width:600px){
+.recargar{
+  padding: 5px;
+  min-width: 300px;
+
+}
+.crear{
+  padding: 5px;
+  min-width: 300px;
+ 
+}
+
+  }
+  @media (max-width:800px){
+    .recargar{
+      padding: 5px;
+      min-width: 270px;
+    
+    }
+    .crear{
+      padding: 5px;
+      min-width: 270px;
+     
+    }
+    
+      }
+
+  @media (max-width:1024px){
+  
+    
+    .navbar {
+    flex-direction: column;
+    }
+    .items{
+      width:100%;
+      flex-direction: column;
+    }
+      }

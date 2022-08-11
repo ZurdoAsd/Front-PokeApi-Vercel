@@ -1,0 +1,170 @@
+.containerCreate {
+  background-color: #2881cc;
+  background-image: url(
+    https://images.unsplash.com/photo-1613771404721-1f92d799e49f?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869
+  );
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.title {
+  padding: 0;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 2em;
+  text-shadow: 2x 2px #1c519e;
+  margin-top:1.5em;
+  margin-bottom: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+.form {
+  width: 55%;
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 2px 3px 4px rgba(20, 20, 20, 0.4);
+  border-radius: 10px;
+  padding: 2em 3em 2em 3em;
+  opacity: 0.8;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.titleName {
+  font-size: 13px;
+  padding-left: 0.5em;
+  padding-top: 0.3em;
+  font-weight: bold;
+  color: gray;
+}
+.input {
+  font-family: "Kabel Bd", sans-serif;
+  padding: 3px;
+  width: 60%;
+  background-color: #e5e5e5;
+  border-radius: 2px;
+  color: gray;
+  border: none;
+  border-bottom: 2px solid var(--color);
+}
+
+.itemEliminar {
+  display: flex;
+  height: fit-content;
+  margin-left: 5px;
+  padding-left: 10px;
+  color: #e5e5e5;
+}
+
+.deleteTypes {
+  background: rgba(255, 255, 255, 0.397);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.498);
+  margin: 0.4em;
+  font-weight: bold;
+  color: #e5e5e5;
+  background-color: #4c5354;
+  padding: 7px;
+}
+.deleteTypes:hover {
+  transform: scale(90%);
+}
+.error {
+  text-align: start;
+  color: #f42007;
+  font-size: 14px;
+}
+
+.botcreate {
+  border-radius: 30px;
+  font-size: 30;
+  cursor: pointer;
+  color: #e5e5e5;
+  border: 2px solid gray;
+  background-color: #4c5354;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  margin-top:1.5em;
+  width: 100%;
+}
+
+.botcreate:active {
+  transform: scale(90%);
+}
+
+.forgrup {
+  position: relative;
+  --color: #5757577e;
+  margin-bottom: 15px;
+}
+.forinput {
+  width: 70%;
+  font-family: inherit;
+  font-size: inherit;
+  color: gray;
+  padding: 0.3em 0 0.5em 4.5em;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--color);
+}
+
+.forinput:not(:placeholder-shown) + .forlabel,
+.forinput:focus + .forlabel {
+  transform: translateY(-17px) scale(0.7);
+  transform-origin: left;
+  --color: #3866f2;
+}
+.forlabel {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+input {
+  text-align: center;
+}
+.botones{
+  display:flex;margin-top:1.5em; 
+}
+.boton1{
+  flex: auto;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #e5e5e5;
+  border: 2px solid gray;
+  background-color: #4c5354;
+  font-weight: bold;
+ padding-top: 0.5em ;
+ padding-bottom: 0.5em; margin-right: 2%;
+}
+.boton2{
+  flex: auto;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #e5e5e5;
+  border: 2px solid gray;
+  background-color: #4c5354;
+  font-weight: bold;
+ padding-top: 0.5em ;
+ padding-bottom: 0.5em;
+}
+.boton1:active{
+  transform:  scale(90%);
+}
+.boton2:active {
+  transform:  scale(90%);
+}
