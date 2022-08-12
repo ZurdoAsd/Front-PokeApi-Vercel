@@ -46,8 +46,8 @@ export default function rootReducer(state = initialState, action) {
     let aux2= state.pokemons;
     if (action.payload === "A-Z") return {...state, pokemons: aux2.sort((a,b)=> a.name>b.name?1:-1),resultados:false}
     if (action.payload === "Z-A")return { ...state, pokemons: aux2.sort((a,b)=> a.name<b.name?1:-1),resultados:false}   
-    if (action.payload === "STR")return { ...state, pokemons:aux2.sort((a,b)=> a.attack<b.attack?1:-1),resultados:false}
-    if (action.payload === "STR-")return { ...state, pokemons:aux2.sort((a,b)=> a.attack>b.attack?1:-1),resultados:false}; 
+    if (action.payload === "STR")return { ...state, pokemons: aux2.sort((a,b)=> a.attack<b.attack?1:-1),resultados:false}
+    if (action.payload === "STR-")return { ...state, pokemons: aux2.sort((a,b)=> a.attack>b.attack?1:-1),resultados:false}; 
     return { ...state, pokemons:aux2, resultados:false}   
  
     case FILTER:
