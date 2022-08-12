@@ -8,6 +8,7 @@
     padding: 5px;
     width: 250px;
     line-height: 1;
+    letter-spacing: 1px;
   }
 
   .select2 {
@@ -38,6 +39,9 @@
       .select{
       text-align: center;
       width: 270px;
-      }
-
-        }   
+      }}
+      @media (max-width:1024px){
+        .select{ text-align: center;}}
+    
+     
+        

@@ -34,6 +34,8 @@ export default function Home() {
   const handleClick = (e) => {
     e.preventDefault();
     dispatch(getAllPokemons());
+    setCurrentPage(1);
+    setShowsearch(false)
   };
   
   return (
@@ -41,8 +43,8 @@ export default function Home() {
        <div className={s.navbar}>
        <img className={s.logo} src={pokemon} alt="pokemon" />
        <div className={s.items}>
-        <button className={s.recargar} onClick={handleClick}>RECARGAR PAGINA</button>
-        <button className={s.crear}> <Link to="/create">CREAR POKEMON </Link></button>
+        <button className={s.recargar} onClick={handleClick}>RELOAD PAGE</button>
+       <Link to="/create"><button className={s.crear}>  CREATE POKEMON </button></Link>
         <Sorts setOrder={setOrder} setCurrentPage={setCurrentPage} />
         </div>
         <button type="button" className={s.lupita}  onClick={()=>setShowsearch(!showsearch)}><img src={lupa} alt="foto"/></button>
@@ -52,7 +54,7 @@ export default function Home() {
 
         <div> <Paginado pokemonsPerPage={pokemonsPerPage} allPokemons={allPokemons.length} paginado={paginado}/></div>
 
-        {resultados? <div className={s.currentpoke}> Pokemon Encontrados:  {allPokemons.length} </div> :  null}
+        {resultados? <div className={s.currentpoke}> Pokemon found:  {allPokemons.length} </div> :  null}
 
         {currentpokemons.length>=1 
         ? (currentpokemons.map((p) => {
@@ -61,11 +63,12 @@ export default function Home() {
            <Card name={p.name.toUpperCase()}  sprite={p.sprite}  types={p.types} id={p.id}/> </div> ); })
          )  
         : (
-          <img
+       
+          <img 
             src= "https://i.gifer.com/origin/a8/a8cce7e5fb8f774dc79a06e3f727a070_w200.webp"
             alt=""
-            justify-content="center"  align-items="center" height="100%" width="80%"/>  )
-            
+            justify-content="center"  align-items="center" height="100%" width="80%"/>  
+           )
             }
     </div>
   );

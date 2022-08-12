@@ -6,13 +6,10 @@ import s from "./SearchBar.module.css";
 
 
 
-export default function SearchBar({setCurrentPage,
-  //  setResultados,results
-  }) {
+export default function SearchBar({setCurrentPage}) {
     const dispatch = useDispatch();
     const [name, setName] = useState('');
-  
-  
+
     function handleInputChange(e) {
       e.preventDefault();
       setName(e.target.value);
@@ -26,7 +23,6 @@ export default function SearchBar({setCurrentPage,
       dispatch(searchpoke(name));
       setName('')
       setCurrentPage(1) ; 
-      // setResultados(results) 
       }}
 
    

@@ -88,7 +88,7 @@ export default function Create() {
       !Object.keys(error).length
     )
 {     dispatch(crearPoke(input));
-    alert("pokemon Creado!!");
+    alert("Pokemon Created!");
   
     setInput({
       name: "",
@@ -101,10 +101,10 @@ export default function Create() {
       sprite: "",
       types: [],
     }); 
-  } else{ alert(`falta ${Object.keys(error)}`) }
+  } else{ alert(`Needs completing... ${Object.keys(error)}`) }
  
   };
- console.log(input)
+ 
   return (
     <div className={s.containerCreate}>
       <div className={s.row}>

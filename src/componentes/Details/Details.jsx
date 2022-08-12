@@ -22,8 +22,6 @@ const controlversion= (e)=>{
   e.target.value="default"
 }
 
-console.log(poke)
-console.log(poke.shiny)
 if (poke.name) {
 
 return (
@@ -49,7 +47,7 @@ null
 
 <div className={s.miniimg3}> 
 <h2>Stats</h2>
-<p>Type: {poke.types.toString().toUpperCase()}
+<p>TYPE: {poke.types&&poke.types.map((e) => e.toUpperCase() + " ")}
 </p>
 <p>HP: {poke.hp} </p>
 <p>ATTACK: {poke.attack} </p>

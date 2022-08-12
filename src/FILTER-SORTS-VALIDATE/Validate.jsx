@@ -28,27 +28,3 @@ export default function validate(input) {
   }
   return error;
 }
-  // if (!input.defense) {
-  //   error.defense = "Este campo es obligatorio";
-  // } 
-  //  if (!input.attack) {
-  //   error.attack = "Este campo es obligatorio";
-  // }
-  // if (!input.speed) {
-  //   error.speed = "Este campo es obligatorio";
-  // }
-  // if (!input.name) {
-  //   error.name = "Este campo es obligatorio";
-  // }
-  // if (!input.height) {
-  //   error.height = "Este campo es obligatorio";
-  // }
-  // if (!input.weight) {
-  //   error.weight = "Este campo es obligatorio";
-  // }
-  // if (!input.hp) {
-  //   error.hp = "Este campo es obligatorio";
-  // }
-  // if (!input.weight) {
-  //   error.weight = "Este campo es obligatorio";
-  // }
