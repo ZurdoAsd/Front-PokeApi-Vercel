@@ -15,7 +15,7 @@ import s from "./Sorts.module.css"
         dispatch(OrderPoke(e.target.value));
         setCurrentPage(1);
         setOrder(`ordenado${e.target.value}`)
-         e.target.value="default"
+  
       }
       
       const filtroPokemon= (e) => {
@@ -23,7 +23,7 @@ import s from "./Sorts.module.css"
         dispatch(FilterPoke(e.target.value))
         setCurrentPage(1);
         setOrder(`ordenado${e.target.value}`)
-        e.target.value="default"
+   
       }
 
 return(
