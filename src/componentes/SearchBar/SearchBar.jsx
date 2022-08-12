@@ -18,7 +18,7 @@ export default function SearchBar({setCurrentPage}) {
     function handleSubmit(e) {
       e.preventDefault();
       if (!name) {
-        return alert("Colocar un busqueda");
+        return alert("Insert a search");
       } else {
       dispatch(searchpoke(name));
       setName('')

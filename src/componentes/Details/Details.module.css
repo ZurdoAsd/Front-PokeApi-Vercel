@@ -27,7 +27,7 @@ flex-wrap: wrap;}
     box-shadow: 0 2px 3px 2px rgba(20, 20, 20, 0.4);
     background-color:#e5e5e5;
     padding: 0.5rem;
-    font-family: cursive; 
+    font-family:"Courier New", Courier, monospace;
     color: #2c4592;
     width:fit-content
 }
@@ -90,7 +90,7 @@ flex-wrap: wrap;}
 }  
 
 
-h5{ font-size: 20px; font-family: cursive; margin: 0;
+h5{ font-size: 20px;font-family:"Courier New", Courier, monospace; margin: 0;
     padding-bottom: 1.5em}
 
 h2{text-align: center;}
@@ -129,7 +129,7 @@ p{font-size: 1.1rem; font-weight: bold;}
 
 .botFooter{
 position:relative;
-   font-family: cursive; 
+font-family:"Courier New", Courier, monospace;
    font-weight:bold; 
    background-color: #e5e5e5;
    border-radius: 5px;
@@ -149,7 +149,7 @@ a:hover{ color:#e5e5e5; }
 
 .version {
     margin: auto;
-    font-family: cursive; 
+    font-family:"Courier New", Courier, monospace;
     font-weight:bold; 
     background-color: #e5e5e5;
     border: solid 3px #2c4592;
