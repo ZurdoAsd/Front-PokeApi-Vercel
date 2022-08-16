@@ -4,9 +4,7 @@
     min-width: 100vw;
     width: 100%;
 }
-link{
-    text-decoration: none;
-}
+
 .Card {
     position: relative;
       display: flex;
@@ -24,8 +22,8 @@ link{
     padding: 0;
     align-content: center;
 }
+
 .Card img{
-   
     width:100%;
     max-width:250px;
     height:100%;
