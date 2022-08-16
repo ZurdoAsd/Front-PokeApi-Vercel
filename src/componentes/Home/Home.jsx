@@ -25,6 +25,7 @@ export default function Home() {
 
   const paginado = (pageNumber) => {
     setCurrentPage(pageNumber);
+ 
   };
 
   useEffect(() => {
@@ -34,10 +35,13 @@ export default function Home() {
   const handleClick = (e) => {
     e.preventDefault();
     dispatch(getAllPokemons());
-    setCurrentPage(1);
-    setShowsearch(false)
+     setCurrentPage(1);
+    setShowsearch(false);
   };
-  
+
+ 
+
+
   return (
     <div className={s.container}>
        <div className={s.navbar}>
@@ -51,10 +55,15 @@ export default function Home() {
         </div>
    
         {showsearch?<div><SearchBar setCurrentPage={setCurrentPage} /></div>:null}
+    
+        {currentpokemons.length>=1 
+        ?<div> <Paginado currentPage={currentPage} setCurrentPage={setCurrentPage}
+        pokemonsPerPage={pokemonsPerPage} allPokemons={allPokemons.length} paginado={paginado}/></div>:null}
 
-        <div> <Paginado pokemonsPerPage={pokemonsPerPage} allPokemons={allPokemons.length} paginado={paginado}/></div>
 
-        {resultados? <div className={s.currentpoke}> Pokemon found:  {allPokemons.length} </div> :  null}
+        {resultados? <div className={s.currentpoke}> Pokemon found:  {allPokemons.length} 
+        </div> :  null}
+ 
 
         {currentpokemons.length>=1 
         ? (currentpokemons.map((p) => {
@@ -62,8 +71,7 @@ export default function Home() {
            <div className={s.cards} key={p.id}> 
            <Card name={p.name.toUpperCase()}  sprite={p.sprite}  types={p.types} id={p.id}/> </div> ); })
          )  
-        : (
-       
+        : (       
           <img 
             src= "https://i.gifer.com/origin/a8/a8cce7e5fb8f774dc79a06e3f727a070_w200.webp"
             alt=""
@@ -73,3 +81,4 @@ export default function Home() {
     </div>
   );
 }
+

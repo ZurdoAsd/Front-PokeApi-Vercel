@@ -5,7 +5,6 @@ const initialState = {
   copiaPokemons: [],
   types: [],
   details: {},
-  pokemonfuerte:[],
   resultados:false,
 };
 
@@ -41,20 +40,20 @@ export default function rootReducer(state = initialState, action) {
         ...state,
         details: {},
       };
-
+      
       case ORDER:
     let aux2= state.pokemons;
     if (action.payload === "A-Z") return {...state, pokemons: aux2.sort((a,b)=> a.name>b.name?1:-1),resultados:false}
     if (action.payload === "Z-A")return { ...state, pokemons: aux2.sort((a,b)=> a.name<b.name?1:-1),resultados:false}   
-    if (action.payload === "STR")return { ...state, pokemons: aux2.sort((a,b)=> a.attack<b.attack?1:-1),resultados:false}
-    if (action.payload === "STR-")return { ...state, pokemons: aux2.sort((a,b)=> a.attack>b.attack?1:-1),resultados:false}; 
+    if (action.payload === "STR")return { ...state, pokemons: aux2.sort((a,b)=>parseInt(a.attack)< parseInt(b.attack)?1:-1),resultados:false}
+    if (action.payload === "STR-")return { ...state, pokemons: aux2.sort((a,b)=>parseInt(a.attack)>parseInt(b.attack)?1:-1),resultados:false}; 
     return { ...state, pokemons:aux2, resultados:false}   
  
     case FILTER:
       let auxx=state.copiaPokemons;
       if (action.payload === "Created") {
         let filterByOrigin = auxx.filter((e) => {
-          return typeof e.id === "string";
+          return e.created ==="true";
         });
         return {
           ...state,
@@ -63,7 +62,7 @@ export default function rootReducer(state = initialState, action) {
       }
       if (action.payload === "Existing") {
         let filterByOrigin = auxx.filter((e) => {
-          return typeof e.id === "number";
+          return e.created ==="false";
         });
         return {
           ...state,

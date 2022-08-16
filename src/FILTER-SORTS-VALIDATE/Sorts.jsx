@@ -10,6 +10,7 @@ import s from "./Sorts.module.css"
     useEffect(() => {
       dispatch(getTypes());
     }, [dispatch]);
+    
       const orderPokemon= (e)=> {
         e.preventDefault();
         dispatch(OrderPoke(e.target.value));
@@ -46,7 +47,7 @@ return(
 <option value="Created">Created</option>
 <option value="Existing">Existing</option>
 <option value="tttt" className={s.select2} disabled="disabled">BY TYPE</option>
-  {allTypes.map(e => {return( <option value={e.name+" "} key={e.name}>{e.name}</option>)}) }  
+  {allTypes.map(e => {return( <option value={e.name} key={e.name}>{e.name}</option>)}) }  
 </select>
 
 </>
