@@ -21,7 +21,7 @@ const controlversion= (e)=>{
   e.target.value==="Basic"?setversion(true):setversion(false);
   e.target.value="default"
 }
-
+console.log(poke)
 if (poke.name) {
 
 return (
