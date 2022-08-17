@@ -21,6 +21,8 @@
     opacity: 0.8;
     padding: 0;
     align-content: center;
+    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .Card img{
