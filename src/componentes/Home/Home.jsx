@@ -39,9 +39,6 @@ export default function Home() {
     setShowsearch(false);
   };
 
- 
-
-
   return (
     <div className={s.container}>
        <div className={s.navbar}>
