@@ -12,7 +12,7 @@ export default function Card({ id, name, sprite, types }) {
           <h4>TYPE: {types?.map((e) => e.toUpperCase() + " ")} </h4>
         </div>
         <Link to={`/home/${id}`}>
-        <img src={sprite.length? sprite : notFound} alt="img" className={s.Img}/>
+        <img  loading="lazy" src={sprite.length? sprite : notFound} alt="img" className={s.Img}/>
         </Link>
       </ul>
   );
