@@ -39,6 +39,7 @@ export default function Home() {
     setShowsearch(false);
   };
 
+  console.log(allPokemons)
   return (
     <div className={s.container}>
        <div className={s.navbar}>
@@ -60,7 +61,7 @@ export default function Home() {
 
         {resultados? <div className={s.currentpoke}> Pokemon found:  {allPokemons.length} 
         </div> :  null}
- 
+          
 
         {currentpokemons.length>=1 
         ? (currentpokemons.map((p) => {
