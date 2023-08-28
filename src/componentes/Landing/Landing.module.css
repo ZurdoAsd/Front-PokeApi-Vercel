@@ -1,10 +1,8 @@
+
+
 .landingContainer{
     background-color: rgb(31, 29, 29);
-    background-image: url(
-    
-    https://i0.wp.com/cdn.clickwallpapers.net/images/clickwallpapers-pokemon-4k-img9.jpg?w=958&ssl=1
-    
-    );
+    background-image: url("../Landing/landing_poke.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
